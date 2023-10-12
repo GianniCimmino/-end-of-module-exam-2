@@ -1,0 +1,26 @@
+body {
+    background-color: darkcyan;
+}
+
+.nav-link {
+    color: aquamarine;
+    font-weight: 700;
+}
+
+nav.navbar.navbar-expand-lg {
+    background-color: gray;
+}
+
+.card {
+    background-color: #030303;
+}
+
+.card-title{
+color: white;
+}
+
+.card-text{
+    color: white;
+}
+
+

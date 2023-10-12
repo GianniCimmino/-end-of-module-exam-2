@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Games For Sale</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"
+          ><img
+            class="img"
+            src="Assets/Logo.svg"
+            alt="Logo"
+            width="100"
+            height="80"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contatti</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cart-container">
+          <button
+            class="btn btn-info my-2 my-sm-0 mx-3 mx-sm-3"
+            type="button"
+            data-toggle="modal"
+            data-target="#cartModal"
+          >
+            Carrello
+          </button>
+        </div>
+      </nav>
+      <div
+        class="modal fade"
+        id="cartModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="cartModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cartModalLabel">Il Tuo Carrello</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Contenuto del carrello -->
+              <p>Elenco degli articoli nel carrello...</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Chiudi
+              </button>
+              <button type="button" class="btn btn-primary">
+                Procedi all'acquisto
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container text-center">
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5"
+        >
+          <!-- Card 1 -->
+          <div class="col px-2 my-3">
+            <div class="card" style="width: 13rem">
+              <img
+                src="Assets/assassin-s-creed-mirage-pc-gioco-ubisoft-connect-europe-cover.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-6">Assassin's Creed Mirage</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-info">Compralo ora!</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col px-2 my-3">
+            <div class="card" style="width: 13rem">
+              <img
+                src="Assets/ea-sports-fc-24-pc-gioco-ea-app-cover.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-6 fst-italic">FC 24</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-info">Compralo ora!</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col px-2 my-3">
+            <div class="card" style="width: 13rem">
+              <img
+                src="Assets/far-cry-6-pc-gioco-ubisoft-connect-europe-cover.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-6 fst-italic">Far Cry 6</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-info">Compralo ora!</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col px-2 my-3">
+            <div class="card" style="width: 13rem">
+              <img
+                src="Assets/lords-of-the-fallen-2023_56ux.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-6 fst-italic">Lords Of The Fallen</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-info">Compralo ora!</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="col px-2 my-3">
+            <div class="card" style="width: 13rem">
+              <img
+                src="Assets/party-animals-pc-gioco-steam-cover.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-6 fst-italic">Party Animals</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-info">Compralo ora!</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="col px-2 my-3">
+            <div class="card" style="width: 13rem">
+              <img
+                src="Assets/payday-3-pc-gioco-steam-cover.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-6 fst-italic">Pay Day 3</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-info">Compralo ora!</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="col px-2 my-3">
+            <div class="card" style="width: 13rem">
+              <img
+                src="Assets/resident-evil-4-separate-ways-pc-gioco-steam-cover.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-6 fst-italic">Resident Evil 4</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-info">Compralo ora!</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="col px-2 my-3">
+            <div class="card" style="width: 13rem">
+              <img
+                src="Assets/sifu-pc-gioco-steam-cover.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-6 fst-italic">SIFU</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-info">Compralo ora!</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 9 -->
+          <div class="col px-2 my-3">
+            <div class="card" style="width: 13rem">
+              <img
+                src="Assets/starfield-pc-gioco-steam-cover.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-6 fst-italic">Starfield</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-info">Compralo ora!</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 10 -->
+          <div class="col px-2 my-3">
+            <div class="card" style="width: 13rem">
+              <img
+                src="Assets/forza-motorsport-pc-xbox-series-x-s-pc-xbox-series-x-s-gioco-microsoft-store-cover.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-6 fst-italic">Forza Motorsport</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-info">Compralo ora!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
