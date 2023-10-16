@@ -62,6 +62,7 @@ getProducts().then((productList) =>
             <p class="card-text">${product.description}</p>
             <p class="card-text">${product.price}</p>
             <a href="#" class="btn btn-info">Compralo ora!</a>
+            <a href="productpage.html?id=${product._id}" class="btn btn-info">Visualizza</a>
           </div>
         </div>
       </div>`)

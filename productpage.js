@@ -46,7 +46,15 @@ async function deleteProduct(id) {
   });
 }
 
-getProducts().then(
+const queryParams = window.location.search;
+const URLparams = new URLSearchParams(queryParams);
+const productid = URLparams.get("id");
+
+if (!productid) {
+  window.location.href = "index.html";
+}
+
+getProduct(productid).then(
   (product) =>
     (document.getElementById(
       "product"
@@ -64,6 +72,10 @@ getProducts().then(
           <h2>Descrizione</h2>
           <p>${product.description}</p>
         </div>
-        <div class="col-lg-6">${product.price}</div>
+        <div class="col-lg-6">
+        <h2>Prezzo</h2>
+        <p>${product.price} Euro</p></div>
       </div>`)
 );
+
+//
