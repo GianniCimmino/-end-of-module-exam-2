@@ -11,16 +11,6 @@ nav.navbar.navbar-expand-lg {
     background-color: gray;
 }
 
-.card {
-    background-color: #030303;
-}
-
-.card-title{
-color: white;
-}
-
-.card-text{
+main {
     color: white;
 }
-
-

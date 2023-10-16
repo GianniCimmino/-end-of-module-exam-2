@@ -46,27 +46,24 @@ async function deleteProduct(id) {
   });
 }
 
-getProducts().then((productList) =>
-  productList.map(
-    (product) =>
-      (document.getElementById("card").innerHTML += `<div class="col px-2 my-3">
-        <div class="card" style="width: 13rem">
+getProducts().then(
+  (product) =>
+    (document.getElementById(
+      "product"
+    ).innerHTML += `<div id="product" class="container">
+      <h1 class="my-4">${product.name}</h1>
+      <div class="row">
+        <div class="col-lg-6">
           <img
             src="${product.imageUrl}"
-            class="card-img-top"
-            alt="..."
+            class="img-fluid"
+            alt="Immagine 1"
           />
-          <div class="card-body">
-            <h5 class="card-title fs-6">${product.name}</h5>
-            <p class="card-text">${product.brand}</p>
-            <p class="card-text">${product.description}</p>
-            <p class="card-text">${product.price}</p>
-            <a href="#" class="btn btn-info">Compralo ora!</a>
-          </div>
         </div>
+        <div class="col-lg-6">
+          <h2>Descrizione</h2>
+          <p>${product.description}</p>
+        </div>
+        <div class="col-lg-6">${product.price}</div>
       </div>`)
-  )
 );
-
-// Creare classe prodotto per rappresentare le informazioni del prodotto (quelle di base che ci sono nell'esercizio).
-//Creare pagina per inserimento prodotto.
