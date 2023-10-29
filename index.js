@@ -1,7 +1,7 @@
 const APIURL = "https://striveschool-api.herokuapp.com/api";
 
 const BEARERTOKEN =
-  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTJiYjg1OGZiYTQ1YzAwMTllMTIyYzMiLCJpYXQiOjE2OTczNjQwNTYsImV4cCI6MTY5ODU3MzY1Nn0.vyUG742uGxXZ4kS3jtVKIDP5zQUThcQoQczqx33Bz2Y";
+  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTNlNDA0OGQ4YmNiNTAwMTQyZWNmMTQiLCJpYXQiOjE2OTg1Nzg1MDQsImV4cCI6MTY5OTc4ODEwNH0.20PlAN_CSO--vFS7KgwTRGHbIXi3H_c0uJvjFU_shqk";
 
 async function getProducts() {
   const response = await fetch(`${APIURL}/product/`, {
